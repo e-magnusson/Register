@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Emil Magnusson. All rights reserved.
 //
 //#include <sqlite3.h>
-
 //#include <ncurses.h>
 
 #include <iostream>
 #include <string>
 #include "cars.h"
 
+//test
 
 using namespace std;
 
@@ -47,12 +47,9 @@ int main(int argc, const char * argv[])
 			cout << "PRICE: "; cin >> iTemp;
 		} while (myCars[i].setPrice(iTemp) == false);
 
+		myCars[i].printDetail();
 
 	}
-
-
-	myCars[0].printDetail();
-	myCars[1].printDetail();
 
 
 	return 0;
